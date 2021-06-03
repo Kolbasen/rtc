@@ -16,7 +16,7 @@ const sig1 = generateSignal(harmonics, frequency, discreteCalls);
 const sig2 = generateSignal(harmonics, frequency, discreteCalls);
 const [crossCorrTau, crossCorr] = crossCorrelation(sig1, sig2);
 
-plt.subplot('211');
+plt.subplot('121');
 plt.title('Auto correlation');
 plt.plot(autoCorrTau, autoCorr);
 plt.xlabel('tau');
@@ -26,7 +26,7 @@ plt.legend();
 const currentDir = path.join(__dirname, '/autoCorr.png');
 plt.save(currentDir);
 
-plt.subplot('212');
+plt.subplot('122');
 plt.title('Cross correlation');
 plt.plot(crossCorrTau, crossCorr);
 plt.xlabel('tau');

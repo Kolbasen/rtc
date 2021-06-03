@@ -21,6 +21,7 @@
     "eslint-plugin-import": "^2.20.2"
   },
   "dependencies": {
+    "mathjs": "^9.4.1",
     "matplotnode": "^0.4.2"
   }
 }
